@@ -1,0 +1,70 @@
+/*Import af fonts*/
+@import url('http://fonts.cdnfonts.com/css/corbel?styles=65647,65649,65650,65651,65648,65652');
+@import url('http://fonts.cdnfonts.com/css/trueno?styles=28817,28823,28815,28819,28807,28809,28821');
+@import url('http://fonts.cdnfonts.com/css/metropolis-4?styles=139992,139996,139986,139988,139990,139994,139982,139984,139980');
+
+/*Fjerner margin og padding for hele siden*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*Generelle regler for body*/
+
+body {
+    font-family: 'Metropolis', sans-serif;
+    color: white;
+}
+
+/*Styling af Header*/
+
+.preheader {
+    background-image: url(images/headerbg.jpg);
+    background-size: 100%;
+    background-position-y: -10px;
+    background-repeat: no-repeat;
+    height: 100px;
+}
+
+.preheader a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Trueno', sans-serif;
+    text-transform: uppercase;
+    font-style: oblique;
+    letter-spacing: 1px;
+    font-size: 50pt;
+    font-weight: bold;
+    color: white;
+    padding-top: 5px;
+}
+
+/*Styling af NAV og LINKS*/
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+    background-color: #00323e;
+
+    font-family: 'Trueno', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12pt;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+    transition: 0.2s;
+}
+nav a {
+    background-color: #00323e;
+    padding: 10px 20px;
+}
+nav a:hover {
+    background-color: #02566b;
+}

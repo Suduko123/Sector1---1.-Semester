@@ -1,0 +1,190 @@
+/*DETTE STYLESHEET ER TIL ALT UNIKT PÅ FORSIDEN*/
+
+/*Styling af udvalgte artikler*/
+
+.udvalgte {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.udvalgte hr {
+    border: 9px #427001 solid;
+    border-radius: 5px;
+    width: 88%;
+    margin: auto;
+}
+
+.udvalgte-flex {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+
+    color: white;
+}
+
+/*Styling af kolonner*/
+
+#kolonne1 {
+    background-image: url(images/gulbil.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 350px;
+    border-radius: 5px;
+    text-align: center;
+    text-align-last: center;
+
+    transition: 0.3s;
+}
+#kolonne1:hover {
+    transform: scale(104%);
+}
+#kolonne1 h1 {
+    padding-top: 20px;
+    padding-bottom: 265px;
+    width: 80%;
+    margin: auto;
+    
+    line-height: 45px;
+    font-size: 30pt;
+    font-weight: 600;
+}
+#kolonne1 h2 {
+    width: 90%;
+    margin: auto;
+    
+    font-size: 15pt;
+    font-weight: 400;
+    line-height: 30px;
+}
+#kolonne1 p {
+    padding-top: 35px;
+    font-size: 10pt;
+}
+
+
+#kolonne2 {
+    background-image: url(images/ds3biler.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 350px;
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+#kolonne2:hover {
+    transform: scale(104%);
+}
+#kolonne2 h1 {
+    padding-left: 20px;
+    width: 80%;
+    padding-top: 370px;
+    padding-bottom: 10px;
+
+    font-size: 28pt;
+}
+#kolonne2 h2 {
+    padding-left: 20px;
+    width: 80%;
+
+    font-size: 15pt;
+    font-weight: 400;
+    line-height: 30px;
+}
+#kolonne2 p {
+    padding-left: 20px;
+    padding-top: 30px;
+    width: 80%;
+    font-size: 10pt;
+}
+
+#kolonne3 {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    width: 350px;
+    border-radius: 5px;
+}
+
+/*Styling af de 2 artikler i kolonne 3*/
+
+.placeholder {
+    width: 350px;
+    height: 200px;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+#artikel1 {
+    color: black;
+
+    transition: 0.3s;
+}
+#artikel1:hover {
+    transform: scale(104%);
+}
+#artikel1 img {
+    border-radius: 5px;
+}
+#artikel1 h1 {
+    width: 80%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#artikel1 h2 {
+    font-size: 15pt;
+    font-weight: 400;
+    line-height: 25px;
+    padding-bottom: 10px;
+}
+#artikel1 p {
+    padding-bottom: 10px;
+    font-size: 10pt;
+}
+
+#artikel2 {
+    background-image: url(images/sportsbiler.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    text-align: left;
+    text-align-last: left;
+
+    transition: 0.3s;
+}
+#artikel2:hover {
+    transform: scale(104%);
+}
+#artikel2 h1 {
+    font-size: 20pt;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+#artikel2 h2 {
+    font-size: 15pt;
+    font-weight: 400;
+    line-height: 25px;
+    padding-bottom: 120px;
+    padding-left: 10px;
+    width: 80%;
+}
+#artikel2 p {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 10pt;
+}
+
+
+/*Styling af nyhedssektion*/
+
+.konkurrence {
+    background-color: grey;
+    text-align: center;
+    padding-top: 50px;
+}
