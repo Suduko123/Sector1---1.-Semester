@@ -68,3 +68,47 @@ nav a {
 nav a:hover {
     background-color: #02566b;
 }
+
+/*Styling af footer*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 350px;
+    background-color: #00323e;
+    padding: 40px;
+    line-height: 25px;
+}
+.fa-brands {
+    font-size: 25pt;
+    padding-right: 12px;
+}
+footer h3 {
+    padding-bottom: 5px;
+}
+#socials {
+    position: relative;
+    top: 16px;
+}
+
+/*Styles ikoner i footer*/
+.fa-brands {
+    transition: 0.1s;
+}
+.fa-instagram:hover {
+    color: #C13584;
+}
+.fa-facebook-f:hover {
+    color: #4267B2;
+}
+.fa-twitter:hover {
+    color: #1DA1F2;
+}
+
+/*Syling af links i footer*/
+.footer a {
+    transition: 0.1s;
+}
+footer a:hover {
+    color: #427001;
+}

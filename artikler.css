@@ -1,0 +1,81 @@
+/*Import af fonts*/
+@import url('http://fonts.cdnfonts.com/css/corbel?styles=65647,65649,65650,65651,65648,65652');
+@import url('http://fonts.cdnfonts.com/css/trueno?styles=28817,28823,28815,28819,28807,28809,28821');
+@import url('http://fonts.cdnfonts.com/css/metropolis-4?styles=139992,139996,139986,139988,139990,139994,139982,139984,139980');
+
+/*Fjerner margin og padding for hele siden*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Generelle regler for alle artikler*/
+main {
+    color: black;
+    text-align: left;
+    text-align: justify;
+    line-height: 20px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+/*Styling af artikler generelt*/
+
+article {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    gap: 40px;
+}
+article h1 {
+    font-size: 45pt;
+    padding-bottom: 30px;
+}
+article h2 {
+    width: 55%;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+article h3 {
+    padding-bottom: 20px;
+}
+
+#stortbillede {
+    margin-top: 50px;
+}
+
+.billedetekst {
+    font-style: italic;
+    font-size: 10pt;
+    color: rgb(78, 78, 78);
+    text-align: right;
+}
+
+/*Styling af billede og liste element*/
+.billedeogliste {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+/*Styling af listen*/
+.liste h3 {
+    font-size: 20pt;
+}
+
+.liste ul {
+    list-style: none;
+    font-size: 16pt;
+    font-weight: 600;
+    line-height: 50px;
+    
+}
+.liste li {
+    margin-top: 30px;
+    background-image: url(images/SVG/F1\ dæk.svg);
+    background-repeat: no-repeat;
+    height: 45px;
+    padding-left: 60px;
+}
