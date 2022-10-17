@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e4a889809e.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/SVG/F1 dæk icon.svg">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="artikler.css">
+    <script src="navbarbg.js"></script>
     <title>En dag på Jyllandsringen</title>
 </head>
 <body>
@@ -15,18 +17,17 @@
         <div class="preheader">
             <a href="index.html">sector1</a>
         </div>
-        <nav>
-            <a href="#">Artikler</a>
-            <a href="#">Events</a>
-            <a href="#">Resultater</a>
-            <a href="#">Om Sector1</a>
-            <a href="#">Kontakt</a>
-        </nav>
     </header>
-
+    <nav id="navbar">
+        <a href="Artikel_Undermenu/artikel_undermenuf1.html">Artikler</a>
+        <a href="events.html">Events</a>
+        <a href="#">Resultater</a>
+        <a href="#">Om Sector1</a>
+        <a href="#">Kontakt</a>
+    </nav>
     <!--Her starter main content-->
     <main>
-        <article>
+        <article class="artikel">
             <header>
                 <h1>En dag på Jyllandsringen</h1>
                 <h2>Hvordan er en dag på den jyske ring, og hvad skal du være opmærksom på?</h2>
@@ -56,7 +57,7 @@
                     </p>
             </section>
 
-            <div class="billedeogliste">
+            <div class="listeogandet">
                 <div>
                     <img src="images/formelbiler.jpg" alt="formel4 og formel5">
                     <p class="billedetekst">Formel 4 og Formel 5 biler på banen.</p>
@@ -94,19 +95,21 @@
 
     <!--Her starter footeren-->
     <footer>
-        <div>
+        <div class="kontakt">
             <h3>Kontakt</h3>
             <a href="mailto:sector1@gmail.com">E-mail: Sector1@gmail.com</a><br><a href="tel:+4529805516">Tlf.: 12 34 56 78</a>
         </div>
         <div id="socials">
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <div class="ikoner">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
             <p>www.sector1.dk</p>
         </div>
-        <div>
+        <div class="adresse">
             <h3>Adresse</h3>
-            <a href="https://goo.gl/maps/3FyppDMbJy34qX679">Christian X's Vej 34 <br> 8260 Viby J</a>
+            <a href="https://goo.gl/maps/3FyppDMbJy34qX679" target="_blank">Christian X's Vej 34 <br> 8260 Viby J</a>
         </div>
     </footer>
 </body>

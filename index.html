@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Et dansk motorsports magasin med fokus på unge studerende. Du bliver opdateret på det bedste inden for motorsport.">
+    <meta name="keywords" content="Motorsport, Magasin, Formel1, Formel2, Formel3">
+    <meta name="author" content="Christoffer Rod Greffel">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e4a889809e.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/SVG/F1 dæk icon.svg">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="forsideunik.css">
+    <script src="navbarbg.js"></script>
     <title>Sector1</title>
 </head>
 <body>
@@ -15,21 +20,21 @@
         <div class="preheader">
             <a href="index.html">sector1</a>
         </div>
-        <nav>
-            <a href="#">Artikler</a>
-            <a href="#">Events</a>
-            <a href="#">Resultater</a>
-            <a href="#">Om Sector1</a>
-            <a href="#">Kontakt</a>
-        </nav>
     </header>
+    <nav id="navbar">
+        <a class="link" href="Artikel_Undermenu/artikel_undermenuf1.html">Artikler</a>
+        <a class="link" href="events.html">Events</a>
+        <a class="link" href="#">Resultater</a>
+        <a class="link" href="#">Om Sector1</a>
+        <a class="link" href="#">Kontakt</a>
+    </nav>
     <!--Her starter main content-->
     <main>
         <!--Her starter min udvalgte sektion-->
         <section class="udvalgte">
             <hr>
             <div class="udvalgte-flex">
-                <a href="#" id="kolonne1">
+                <a href="kevinmagnussen.html" id="kolonne1">
                     <h1>Kevin Magnussens 2022 Sæson</h1>
                     <h2>Kevin Magnussen er tilbage i Formel1 i 2022, og sæsonafslutningen nærmer sig. 
                         Vi ser på, hvordan det er gået ham.</h2>
@@ -41,7 +46,7 @@
                     <p>10 / 10 / 2022</p>
                 </a>
                 <div id="kolonne3">
-                    <a href="#" id="artikel1">
+                    <a href="følgmotorsport.html" id="artikel1">
                         <img src="images/streaming.jpg" alt="billede af streaming">
                         <h1>Den billigste måde at følge motorsport</h1>
                         <h2>Streaming er dyrt. Her er et stort overblik over din muligheder.</h2>
@@ -77,27 +82,27 @@
         </section>
             <section class="allekort">
                 <a href="#" class="kort">
-                    <img src="images/placeholder.jpg" alt="artikel billede">
+                    <img src="images/tekniskehjørne.jpg" alt="artikel billede">
                     <div class="kortindhold">
-                        <h1>Titel</h1>
-                        <h2>Spændende tekst som kort og præcist forklarer indholdet af artiklen og fanger opmærksomhed.</h2>
-                        <p>dato: 11/10-2022</p>
+                        <h1>Det tekniske hjørne</h1>
+                        <h2>Vi ser på hvordan en F1 bil fungerer og hvilke principper der bliver brugt. Læs med her og find ud af hvad downforce og </h2>
+                        <p>dato: 14/10-2022</p>
                     </div>
                 </a>
                 <a href=# class="kort">
-                    <img src="images/placeholder.jpg" alt="artikel billede">
+                    <img src="images/verstappenhjelm.jpg" alt="artikel billede">
                     <div class="kortindhold">
-                        <h1>Titel</h1>
-                        <h2>Spændende tekst som kort og præcist forklarer indholdet af artiklen og fanger opmærksomhed.</h2>
-                        <p>dato: 11/10-2022</p>
+                        <h1>Verstappen vs Leclerc</h1>
+                        <h2>Kampen vi alle havde ventet på kom ikke i 2022. Hvad har 2023 i vente og kan vi forvente en titelkamp i næste sæson?</h2>
+                        <p>dato: 16/10-2022</p>
                     </div>
                 </a>
                 <a href="#" class="kort">
-                    <img src="images/placeholder.jpg" alt="artikel billede">
+                    <img src="images/klima.jpg" alt="artikel billede">
                     <div class="kortindhold">
-                        <h1>Titel</h1>
-                        <h2>Spændende tekst som kort og præcist forklarer indholdet af artiklen og fanger opmærksomhed.</h2>
-                        <p>dato: 11/10-2022</p>
+                        <h1>F1 vil være Co2 Neutrale</h1>
+                        <h2>Formel1 har meldt ud at de vil være klima neutrale, men hvordan? Vi ser på hvad de har sagt og om det overhovedet er muligt.</h2>
+                        <p>dato: 15/10-2022</p>
                     </div>
                 </a>
             </section>
@@ -105,19 +110,21 @@
     
     <!--Her starter footeren-->
     <footer>
-        <div>
+        <div class="kontakt">
             <h3>Kontakt</h3>
             <a href="mailto:sector1@gmail.com">E-mail: Sector1@gmail.com</a><br><a href="tel:+4529805516">Tlf.: 12 34 56 78</a>
         </div>
         <div id="socials">
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <div class="ikoner">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
             <p>www.sector1.dk</p>
         </div>
-        <div>
+        <div class="adresse">
             <h3>Adresse</h3>
-            <a href="https://goo.gl/maps/3FyppDMbJy34qX679">Christian X's Vej 34 <br> 8260 Viby J</a>
+            <a href="https://goo.gl/maps/3FyppDMbJy34qX679" target="_blank">Christian X's Vej 34 <br> 8260 Viby J</a>
         </div>
     </footer>
 </body>
