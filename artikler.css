@@ -49,6 +49,7 @@ article img {
 #stortbillede {
     margin-top: 50px;
     border-radius: 5px;
+    width: 1015px;
 }
 
 .billedetekst {
@@ -63,6 +64,9 @@ article img {
     display: flex;
     gap: 50px;
     margin-top: 50px;
+}
+.listeogandet img {
+    width: 400px;
 }
 
 /*Styling af listen i artikel 1*/
@@ -132,7 +136,7 @@ article img {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    flex: wrap;
+    flex-wrap: wrap;
 }
 
 /*Stling af listen i artikel 2*/

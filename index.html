@@ -2,17 +2,17 @@
 <html lang="da">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Et dansk motorsports magasin med fokus på unge studerende. Du bliver opdateret på det bedste inden for motorsport.">
+    <meta name="description" content="Et dansk motorsports magasin med fokus på unge studerende. Du bliver opdateret på det bedste inde for motorsport.">
     <meta name="keywords" content="Motorsport, Magasin, Formel1, Formel2, Formel3">
     <meta name="author" content="Christoffer Rod Greffel">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1280px, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e4a889809e.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="images/SVG/F1 dæk icon.svg">
+    <link rel="icon" href="images/SVG/F1dæk_icon.svg">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="forsideunik.css">
     <script src="navbarbg.js"></script>
-    <title>Sector1</title>
+    <title>Sector1.dk</title>
 </head>
 <body>
     <!--Her starter headeren-->
@@ -22,11 +22,12 @@
         </div>
     </header>
     <nav id="navbar">
-        <a class="link" href="Artikel_Undermenu/artikel_undermenuf1.html">Artikler</a>
-        <a class="link" href="events.html">Events</a>
-        <a class="link" href="#">Resultater</a>
-        <a class="link" href="#">Om Sector1</a>
-        <a class="link" href="#">Kontakt</a>
+        <a href="index.html" id="hjem"><i class="fa-solid fa-house"></i></a>
+        <a href="Artikel_Undermenu/artikel_undermenuf1.html">Artikler</a>
+        <a href="events.html">Events</a>
+        <a href="resultater.html">Resultater</a>
+        <a href="omsector1.html">Om Sector1</a>
+        <a href="kontakt.html">Kontakt</a>
     </nav>
     <!--Her starter main content-->
     <main>
@@ -66,9 +67,12 @@
         <section class="konkurrence">
             <h1>Vind en f1 tur</h1>
             <h2>til Belgiens Grand Prix 2023</h2>
-            <input type="text" placeholder="E-mail...">
+            <div class="konkurrence_deltag">
+                <input id="konkurrence" type="text" placeholder="E-mail...">
+                <button id="konkurrenceknap">Deltag</button>
+            </div>
             <h3>Indtast din e-mail for at deltage i konkurrencen</h3>
-            <a href="#">Regler og vilkår for deltagelse</a>
+            <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Regler og vilkår for deltagelse</a>
         </section>
 
         <!--Her starter min trending sektion-->

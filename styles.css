@@ -4,9 +4,15 @@
 @import url('https://fonts.cdnfonts.com/css/metropolis-4?styles=139992,139996,139986,139988,139990,139994,139982,139984,139980');
 
 /*Fjerner margin og padding for hele siden*/
-* {
+*,*::before,*::after {
     padding: 0;
     margin: 0;
+    box-sizing: inherit;
+}
+
+/*Sættes for at footer kan placeres i bunden*/
+html {
+    height: 100%;
 }
 
 /*Generelle regler for body*/
@@ -14,6 +20,10 @@
 body {
     font-family: 'Metropolis', sans-serif;
     color: white;
+    min-height: 100%;
+    position: relative;
+    margin: 0;
+    padding-bottom: 150px;
 }
 
 /*Styling af Header*/
@@ -44,8 +54,7 @@ body {
 
 nav {
     display: flex;
-    justify-content: center;
-    gap: 110px;
+    justify-content: space-evenly;
     background-color: #00323e;
 
     font-family: 'Trueno', sans-serif;
@@ -61,37 +70,51 @@ nav {
 a {
     text-decoration: none;
     color: white;
-
-    transition: 0.2s;
 }
 nav a {
-    background-color: none;
     padding: 12px 20px;
+    transition: 0.2s;
 }
-nav a:hover {
+nav a:hover:not(#hjem) {
     background-color: #02566b;
+}
+
+/*Hjemknap*/
+#hjem:hover {
+    color: #02566b;
 }
 
 /*Baggrundsfarve skifter på navScroll*/
-.bgColor {
+.navChange {
     transition: .2s;
-    background-color: #02566b;
-    border-bottom: 4px solid #00323e;
+    background-color: #02566bef;
+    border-bottom: 4px solid #00323b79;
+    justify-content: center;
+    gap: 20px;
 }
 
-.navscroll a:hover {
+.navscroll a:hover:not(#hjem) {
     background-color: #00323e;
+}
+.navscroll #hjem:hover {
+    color: #00323e;
 }
 
 /*Styling af footer*/
 
 footer {
     display: flex;
-    justify-content: center;
-    gap: 350px;
-    background-color: #00323e;
+    justify-content: space-around;
+    background-color: #00323e; 
+    gap: 300px;
     padding: 40px;
     line-height: 25px;
+
+    /*Bliv i bunden for helvede*/
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 .fa-brands {
     font-size: 25pt;
@@ -102,6 +125,7 @@ footer h3 {
 #socials {
     position: relative;
     top: 16px;
+    right: 28px;
 }
 
 /*Styles ikoner i footer*/
@@ -157,7 +181,7 @@ footer h3 {
 }
 .kort:hover {
     background-color: #427001;
-    transform: scale(102%);
+    transform: scale(1.02)
 }
 .kort img {
     border-radius: 5px 5px 0px 0px;
@@ -176,7 +200,7 @@ footer h3 {
     color: white;
     font-size: 15pt;
     text-align: left;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: uppercase;
 }
 .kortindhold h2 {
@@ -201,7 +225,7 @@ footer h3 {
     justify-content: space-between;
 }
 
-/*Stlying af menupunkter*/
+/*Stylying af menupunkter*/
 .menuer {
     display: flex;
     justify-content: space-between;
@@ -253,7 +277,7 @@ footer h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 50px;
     margin-bottom: 100px;
@@ -292,7 +316,7 @@ footer h3 {
 }
 
 /*KNAPPER*/
-#pris {
+.pris {
     border: none;
     border-radius: 5px;
     background-color: #02566b;
@@ -306,7 +330,7 @@ footer h3 {
     margin-bottom: 20px;
     font-size: 12pt;
 }
-#tilmelding {
+.tilmelding {
     border: none;
     border-radius: 5px;
     background-color: #427001;
@@ -318,6 +342,150 @@ footer h3 {
     font-size: 12pt;
     transition: .2s;
 }
-#tilmelding:hover {
-    transform: scale(102%);
+.tilmelding:hover {
+    transform: scale(1.02);
+}
+
+/*Videresending fra bunden af artikler*/
+
+.videresend {
+    background-color:#427001;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: 700;
+    width: 170px;
+    text-align: center;
+
+    transition: 0.2s;
+}
+.videresend:hover {
+    background-color: #00323e;
+}
+
+/*OM SECTOR1 SIDE*/
+
+#omsector1 {
+    margin-top: 100px;
+}
+
+.omos {
+    background-color: #00323e;
+    border-radius: 30px;
+    border: 10px #02566b solid;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 70%;
+    color: white;
+    margin: auto;
+}
+.omos h1 {
+    padding-bottom: 30px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    line-height: 50px;
+}
+.omos p {
+    padding-bottom: 50px;
+    font-size: 16pt;
+    font-weight: 200;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    line-height: 25px;
+    padding: 20px;
+}
+
+#eventlink {
+    text-decoration: underline;
+}
+
+/*KONTAKTSIDE*/
+
+#kontaktside {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#kontaktside h1 {
+    color: black;
+    padding-bottom: 10px;
+    font-size: 45pt;
+}
+
+#kontaktside h3 {
+    color: black;
+    padding-bottom: 20px;
+}
+
+.kontaktform {
+    background-color: #00323e;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+input[type=text]:not(#konkurrence), select, textarea {
+    font-family: 'Metropolis', sans-serif;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 20px; 
+    resize: vertical 
+}
+input[type=email], select, textarea {
+    font-family: 'Metropolis', sans-serif;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 20px; 
+    resize: vertical 
+}
+
+input[type=submit] {
+    background-color: #427001;
+    border: none;
+    font-family: 'Metropolis', sans-serif;
+    font-size: 15pt;
+    font-weight: 500;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: .1s;
+}
+input[type=submit]:hover {
+    background-color: #02566b;
+}
+
+/*RESULTATSIDE*/
+
+#resultater {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 235px;
+}
+
+#resultater h1 {
+   color: black;
+   font-size: 50pt;
+   font-weight: 900;
+   font-family: 'Century Gothic', 'Trueno', 'Lucida Sans', sans-serif;
+}
+.fa-screwdriver-wrench {
+    color: rgb(228, 121, 0);
+    font-size: 80pt;
+    padding-bottom: 30px;
 }

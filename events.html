@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e4a889809e.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="images/SVG/F1 dæk icon.svg">
+    <link rel="icon" href="images/SVG/F1dæk_icon.svg">
     <link rel="stylesheet" href="styles.css">
     <script src="navbarbg.js"></script>
     <title>Events</title>
 </head>
-<body id="eventside">
+<body>
     <!--Her starter headeren-->
     <header>
         <div class="preheader">
@@ -17,14 +18,15 @@
         </div>
     </header>
     <nav id="navbar">
+        <a href="index.html" id="hjem"><i class="fa-solid fa-house"></i></a>
         <a href="Artikel_Undermenu/artikel_undermenuf1.html">Artikler</a>
         <a href="events.html">Events</a>
-        <a href="#">Resultater</a>
-        <a href="#">Om Sector1</a>
-        <a href="#">Kontakt</a>
+        <a href="resultater.html">Resultater</a>
+        <a href="omsector1.html">Om Sector1</a>
+        <a href="kontakt.html">Kontakt</a>
     </nav>
     <!--Her starter main content-->
-    <main>
+    <main id="eventside">
         <section class="eventintro">
             <h1>Kommende events</h1>
             <h2>Her er en liste over kommende events arrangeret af Sector1.
@@ -36,15 +38,15 @@
             <div class="event">
                 <div class="eventindhold">
                     <h1>Fælles tur til Jyllandsringen</h1>
-                    <h2>Dato: xx/xx-2022</h2>
+                    <h2>Dato: 30/10-2022</h2>
                     <p>Kom med til en hæsblæsende dag på Jyllandsringen, sammen med en masse andre unge mennesker
                         og oplev en hyggelig stemning og masser af action på banen. Der arrangeres transport fra Aarhus
                         og så har vi sørget for billigere entré, samt mad og drikke ved banen.
                     </p>
                 </div>
                 <div class="knapper">
-                    <a href="#"><button id="pris">Pris: 100 kr.</button></a>
-                    <a href="#"><button id="tilmelding">Tilmelding</button></a>
+                    <button class="pris">Pris: 100 kr.</button>
+                    <button class="tilmelding">Tilmelding</button>
                 </div>
             </div>
             <div class="event">
@@ -57,8 +59,8 @@
                     </p>
                 </div>
                 <div class="knapper">
-                    <button id="pris">Pris: xxx kr.</button>
-                    <button id="tilmelding">Tilmelding</button>
+                    <button class="pris">Pris: xxx kr.</button>
+                    <button class="tilmelding">Tilmelding</button>
                 </div>
             </div>
             <div class="event">
@@ -71,8 +73,8 @@
                     </p>
                 </div>
                 <div class="knapper">
-                    <button id="pris">Pris: xxx kr.</button>
-                    <button id="tilmelding">Tilmelding</button>
+                    <button class="pris">Pris: xxx kr.</button>
+                    <button class="tilmelding">Tilmelding</button>
                 </div>
             </div>
             <div class="event">
@@ -85,8 +87,8 @@
                     </p>
                 </div>
                 <div class="knapper">
-                    <button id="pris">Pris: xxx kr.</button>
-                    <button id="tilmelding">Tilmelding</button>
+                    <button class="pris">Pris: xxx kr.</button>
+                    <button class="tilmelding">Tilmelding</button>
                 </div>
             </div>
         </section>
