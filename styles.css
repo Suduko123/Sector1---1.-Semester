@@ -34,6 +34,7 @@ body {
     background-position-y: -10px;
     background-repeat: no-repeat;
     height: 100px;
+    min-width: 1260px;
 }
 
 .preheader a {
@@ -403,12 +404,8 @@ footer h3 {
 /*KONTAKTSIDE*/
 
 #kontaktside {
-    display: flex;
-    flex-direction: column;
     width: 70%;
     margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
 }
 
 #kontaktside h1 {
@@ -426,6 +423,14 @@ footer h3 {
     background-color: #00323e;
     padding: 50px;
     border-radius: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 input[type=text]:not(#konkurrence), select, textarea {
@@ -468,6 +473,30 @@ input[type=submit]:hover {
     background-color: #02566b;
 }
 
+.andremuligheder {
+    color: black;
+    margin-bottom: 50px;
+}
+.andremuligheder h2 {
+    font-size: 25pt;
+    padding-bottom: 20px;
+}
+.andremuligheder li {
+    list-style: none;
+    font-size: 18pt;
+    padding-bottom: 10px;
+}
+.andremuligheder li {
+    color: black;
+    transition: 0.2s;
+}
+.andremuligheder a {
+    color: black;
+}
+.andremuligheder a:hover {
+    color: #02566b;
+}
+
 /*RESULTATSIDE*/
 
 #resultater {
@@ -483,6 +512,14 @@ input[type=submit]:hover {
    font-size: 50pt;
    font-weight: 900;
    font-family: 'Century Gothic', 'Trueno', 'Lucida Sans', sans-serif;
+}
+#resultater p {
+    color: black;
+    width: 50%;
+    text-align: center;
+    font-size: 15pt;
+    padding-top: 20px;
+    line-height: 30px;
 }
 .fa-screwdriver-wrench {
     color: rgb(228, 121, 0);
